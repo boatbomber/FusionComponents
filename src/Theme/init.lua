@@ -18,11 +18,15 @@ else
 	-- Mock the StudioTheme API when used in games
 	local colorData = require(script.colorData)
 	local mockTheme = table.create(2)
+
 	function mockTheme:GetColor(Color, Modifier)
 		return colorData[Color][Modifier or Enum.StudioStyleGuideModifier.Default]
 	end
+
 	function mockTheme:SetColor(Color, Modifier, Value)
 		colorData[Color][Modifier] = Value
+		-- Trigger dependencies update
+		theme:set(mockTheme, true)
 	end
 
 	theme:set(mockTheme)
