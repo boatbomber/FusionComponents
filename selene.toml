@@ -1,0 +1,6 @@
+std = "roblox"
+
+[rules]
+# We want all the Fusion imports even if a particular component only uses some of them
+# for consistency of boilerplate and ease of maintenance. Therefore, we allow unused.
+unused_variable = "allow"
