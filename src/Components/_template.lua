@@ -4,16 +4,7 @@
 ]]
 
 local Fusion = require(script.Parent.Parent.Fusion)
-
-local New = Fusion.New
-local Children = Fusion.Children
-local State = Fusion.State
-local Computed = Fusion.Computed
-local ComputedPairs = Fusion.ComputedPairs
-local Spring = Fusion.Spring
-local Compat = Fusion.Compat
-local OnEvent = Fusion.OnEvent
-local OnChange = Fusion.OnChange
+local New, Children, OnEvent, OnChange, Value, Observer, Computed, ComputedPairs, Spring = Fusion.New, Fusion.Children, Fusion.OnEvent, Fusion.OnChange, Fusion.Value, Fusion.Observer, Fusion.Computed, Fusion.ComputedPairs, Fusion.Spring
 
 -- Dependencies
 -- local otherComponent = require(script.Parent.otherComponent)

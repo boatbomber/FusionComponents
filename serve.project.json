@@ -1,0 +1,13 @@
+{
+	"name": "FusionComponents",
+	"tree": {
+		"$className": "DataModel",
+
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"FusionComponents": {
+				"$path": "src"
+			}
+		}
+	}
+}
